@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-sizing;
+}
+
+header {
+  background-color: hsl(184, 6%, 49%);
+  padding: 10px 60px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+nav img {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  display: flex;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.list-items .list-item {
+  cursor: pointer;
+}
+.list-items .list-item:hover {
+  border: 2px solid rgba(245, 240, 240, 0.9);
+  border-radius: 2px;
+}
+
+nav ul .nav-button {
+  border: 0.1px solid rgb(250, 249, 249);
+  background-color: #758283;
+  width: 140px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  padding: 8px 30px;
+  cursor: pointer;
+  position: relative;
+  left: 35px;
+}
+.container-hero-section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  padding-right: 100px;
+  margin-bottom: 70px;
+}
+
+.hero-section-flex .hero-image {
+  background-image: url('/images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 600px;
+  width: 500px;
+}
+
+.hero-section-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-text-flex {
+  margin-left: 200px;
+  width: 500px;
+  height: 600px;
+}
+.hero-text-flex h1 {
+  color: white;
+  font-size: 60px;
+  margin-top: 90px;
+}
+.hero-text-flex p {
+  color: white;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+[alt='mail-icon'] {
+  height: 20px;
+  position: relative;
+  left: 1px;
+}
+
+.email-group {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  width: 630px;
+}
+
+.email-group input {
+  width: 1300px;
+  height: 40px;
+  padding: 10px 0px;
+  border: none;
+  margin-left: -30px;
+}
+
+.email-group input[type='email'] {
+  padding-left: 40px;
+  padding-right: 50px;
+  background-color: white;
+}
+.email-group .primary-button {
+  position: relative;
+  right: 150px;
+  width: 400px;
+  height: 40px;
+  color: white;
+  background-color: #bdbdbd;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* ----------------Business section starts here */
+
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.txt-center {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 380px;
+  margin-right: 380px;
+  height: 100px;
+  font-size: 35px;
+}
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+.achievement {
+  height: 100px;
+}
+.achievement .achievement-h2 {
+  font-size: 35px;
+}
+.ptext-gray {
+  color: grey;
+  margin-top: -15px;
+}
+.target-customer {
+  margin-top: 40px;
+  background-image: url(/images/targetcust.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 500px;
+  width: 1200px;
+}
+
+.play-btn img {
+  background: white;
+  border-radius: 50%;
+  color: green;
+  padding: 12px;
+  position: relative;
+  top: 250px;
+  left: 500px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Team Intro Mid Section --------------------*/
+
+.team-intro .container h1 {
+  font-size: 45px;
+}
+
+.intro-cards .intro-card {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.intro-card .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+.intro-card .text-container h2 {
+  font-size: 35px;
+}
+.intro-card .text-gray {
+  color: grey;
+  margin-bottom: 40px;
+}
+.intro-card .text-container .primary-button {
+  height: 30px;
+  margin-right: 300px;
+  font-size: 16px;
+  color: white;
+  background-color: #bdbdbd;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#image-1 {
+  background-image: url(/images/intro-1.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 500px;
+  width: 500px;
+}
+
+/* --------------------Team intro mid section ends here */
+
+/* Team intro-2 mid section starts here */
+
+#image-2 {
+  background-image: url(/images/intro-2.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 500px;
+  width: 500px;
+}
+
+#image-3 {
+  background-image: url(/images/intro-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 500px;
+  width: 500px;
+}
+
+.emp-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.emp-text-container > h1 {
+  font-size: 35px;
+  width: 350px;
+  height: 75px;
+}
+.emp-text-container p {
+  width: 500px;
+  color: #bdbdbd;
+}
+
+.emp-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.employee-btn {
+  padding: 10px 10px;
+  margin: 0 500px;
+  margin-bottom: 100px;
+  color: white;
+  background-color: #bdbdbd;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#photo-1 {
+  background-image: url(/images/photo-1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  height: 430px;
+  width: 360px;
+}
+#photo-2 {
+  background-image: url(/images/photo-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  height: 430px;
+  width: 360px;
+}
+#photo-3 {
+  background-image: url(/images/photo-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  height: 430px;
+  width: 360px;
+}
+/*  */
+
+/* Footer starts from here */
+
+footer {
+  background-color: black;
+}
+.footer-logo {
+  background-color: black;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px auto;
+  justify-content: space-between;
+  border-bottom: 0.1px solid rgba(255, 0, 0, 0.4);
+}
+.footer-logo img {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-logo .flex-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 400px;
+  gap: 12px;
+  height: 70px;
+}
+
+footer h2 {
+  color: white;
+}
+
+.flex-icons .socials {
+  padding-left: 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(247, 328, 247, 0.3);
+  padding: 0 5px;
+}
+.flex-icons .socials img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 20px;
+}
+
+.footer-cards {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.footer-cards .footer-card ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  padding-left: 0px;
+  height: 130px;
+}
+.footer-card .list-items .list-item {
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  color: grey;
+  opacity: 0.8px;
+}
