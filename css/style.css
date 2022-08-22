@@ -18,6 +18,7 @@ nav img {
   height: 40px;
   margin-top: 10px;
 }
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -57,12 +58,11 @@ nav ul .nav-button {
   position: relative;
   left: 35px;
 }
+
 .container-hero-section {
   display: flex;
   flex-direction: row;
-  padding-left: 80px;
-  padding-right: 100px;
-  margin-bottom: 70px;
+  justify-content: space-evenly;
 }
 
 .hero-section-flex .hero-image {
@@ -77,7 +77,7 @@ nav ul .nav-button {
 
 .hero-section-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 .hero-text-flex {
@@ -134,7 +134,7 @@ nav ul .nav-button {
   cursor: pointer;
 }
 
-/* ----------------Business section starts here */
+/* --=================== Business section starts here ========= */
 
 .container {
   margin-left: 150px;
@@ -142,13 +142,18 @@ nav ul .nav-button {
   display: flex;
   flex-direction: column;
 }
-.txt-center {
+.target-business .txt-center {
+  text-align: center;
+}
+
+.txt-center h1 {
   text-align: center;
   margin-top: 50px;
   margin-left: 380px;
   margin-right: 380px;
   height: 100px;
   font-size: 35px;
+  border: 10px solid red;
 }
 .achievements {
   display: flex;
@@ -399,4 +404,80 @@ footer h2 {
   border: 1px solid transparent;
   color: grey;
   opacity: 0.8px;
+}
+
+/* =================== Media screen for tablet =============== */
+
+@media (max-width: 1210px) {
+  .hero-section-flex .hero-image {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .target-customer {
+    display: none;
+  }
+  .intro-card {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .emp-cards {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .employee-btn {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    right: 20rem;
+  }
+}
+
+/* ============= for 1000 px screen =============== */
+
+@media (max-width: 1000px) {
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 700px;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  nav ul li {
+    width: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border: 2px solid transparent;
+  }
+  footer .footer-cards {
+    display: none;
+  }
+  .hero-text-flex {
+    margin-right: 12rem;
+  }
+  .hero-text-flex h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text-flex p {
+    font-size: 1rem;
+  }
+  .email-group {
+    width: 600px;
+  }
+}
+
+/* ======== For 730px screens ======== */
+
+@media (max-width: 730px) {
+  footer {
+    display: none;
+  }
 }
